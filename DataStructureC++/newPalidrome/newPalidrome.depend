@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1609087949 source:/home/riziry/CodeFile/newPalidrome/body.cpp
+	"header.h"
+	<string.h>
+
+1609081569 source:/home/riziry/CodeFile/newPalidrome/main.cpp
+	<iostream>
+	"header.h"
+
+1609082815 /home/riziry/CodeFile/newPalidrome/header.h
+	<iostream>
+

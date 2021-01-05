@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1609062732 source:/home/riziry/CodeFile/donation/main.cpp
+	<iostream>
+	"headerDOn.h"
+
+1609062732 source:/home/riziry/CodeFile/donation/bodyDOn.cpp
+	"headerDOn.h"
+
+1609060539 /home/riziry/CodeFile/donation/headerDOn.h
+	<iostream>
+

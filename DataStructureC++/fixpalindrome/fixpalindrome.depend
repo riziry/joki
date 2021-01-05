@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1609092870 source:/home/riziry/CodeFile/fixpalindrome/main.cpp
+	<iostream>
+	"header.h"
+
+1609094561 /home/riziry/CodeFile/fixpalindrome/header.h
+	<iostream>
+
+1609096087 source:/home/riziry/CodeFile/fixpalindrome/body.cpp
+	"header.h"
+	<string.h>
+

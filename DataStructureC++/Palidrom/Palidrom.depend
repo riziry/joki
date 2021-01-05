@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1609068193 source:/home/riziry/CodeFile/Palidrom/main.cpp
+	<iostream>
+	"headerPalindrom.h"
+
+1609067516 source:/home/riziry/CodeFile/Palidrom/bodyPalindrome.cpp
+	<iostream>
+	<string.h>
+	"headerPalindrom.h"
+
+1609066845 /home/riziry/CodeFile/Palidrom/headerPalindrom.h
+
