@@ -1,0 +1,15 @@
+select g.name, 
+	p.userID, 
+	p.qlt as Buy_qlt 
+from purchaseTransaction p 
+right join goods g 
+on p.goodsID=g.GID;
+
+with group by name
+select g.name, 
+	p.userID, 
+	p.qlt as Buy_qlt 
+from purchaseTransaction p 
+right join goods g 
+on p.goodsID=g.GID group by name;
+

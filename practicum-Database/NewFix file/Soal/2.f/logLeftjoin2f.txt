@@ -1,0 +1,6 @@
+select g.name, 
+	p.userID, 
+	p.qlt as Buy_qlt 
+from purchaseTransaction p 
+left join goods g 
+on p.goodsID=g.GID;

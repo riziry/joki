@@ -1,0 +1,8 @@
+select u.firstName, 
+	u.lastName, 
+	p.TID, g.name, 
+	p.qlt, 
+	g.price as Price_per_1pc 
+from purchaseTransaction p 
+inner join users u on u.UID=p.userID 
+inner join goods g on g.GID=p.goodsID;

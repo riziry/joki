@@ -1,0 +1,13 @@
+#avg
+select avg(qlt) as average_goods_out 
+from purchaseTransaction;
+	
+select count(TID) as NumberOfTransaction, 
+	userID 
+from purchaseTransaction 
+group by userID;
+
+select min(price) as minimal_price, 
+	name 
+from goods;
+

@@ -1,0 +1,55 @@
+*for the data, i get the name from fake name generator
+https://www.fakenamegenerator.com/gen-male-au-us.php
+
+DATETIME - format: YYYY-MM-DD HH:MI:SS.
+
+# create database
+create database uas_basdat_19170;
+
+# use database
+use uas_basdat_19170;
+
+# create table user with id as the primary key
+create table users(
+	UID int(3) primary key, 
+	firstName char(20), 
+	lastName char(20), 
+	gender char(1), 
+	addrs varchar(30), 
+	city char(15), 
+	state char(15), 
+	country char(10), 
+	postalCode int(10)
+);
+
+# create table goods with id as the primary key
+create table goods(
+	GID int(3) primary key, 
+	name char(30), 
+	price int(7), 
+	stock_left int(3)
+);
+
+# create table transaction with id as the primary key,
+# userID and goodsID as foreign key
+create table purchaseTransaction(
+	TID int(3) primary key, 
+	userID int(3), 
+	goodsID int(3), 
+	purchaseDate datetime, 
+	qlt int(3), 
+	constraint FK_userID foreign key (userID) references users(id), 
+	constraint FK_goodsID foreign key (goodsID) references goods(id)
+);
+
+## creating foreign key
+alter table purchaseTransaction 
+	add constraint FK_userID 
+	foreign key (userID) 
+	references users(UID);
+
+alter table purchaseTransaction 
+	add constraint FK_goodsID 
+	foreign key (goodsID) 
+	references goods(GID);
+

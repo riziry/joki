@@ -1,0 +1,20 @@
+LOAD DATA INFILE '/home/riziry/CodeFile/joki/practicum-Database/2.a/fixDataset_CSV/goods.csv' 
+INTO TABLE goods
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+
+LOAD DATA INFILE '/home/riziry/CodeFile/joki/practicum-Database/2.a/fixDataset_CSV/users.csv' 
+INTO TABLE users
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+
+LOAD DATA INFILE '/home/riziry/CodeFile/joki/practicum-Database/2.a/fixDataset_CSV/purchaseTransaction.csv' 
+INTO TABLE purchaseTransaction
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;

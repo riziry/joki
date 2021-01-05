@@ -1,0 +1,9 @@
+select UID, 
+	firstName, 
+	lastName, 
+	qlt, 
+	purchaseDate 
+from users 
+inner join purchaseTransaction 
+on purchaseTransaction.userID=users.UID;
+

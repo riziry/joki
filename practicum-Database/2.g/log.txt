@@ -1,0 +1,20 @@
+##max
+select max(qlt) as Max_Goods_out, 
+	name 
+from purchaseTransaction 
+join goods 
+on goods.GID=purchaseTransaction.goodsID;
+
+##min
+select min(qlt) as Minimal_Goods_out, 
+	name 
+from purchaseTransaction 
+join goods 
+on goods.GID=purchaseTransaction.goodsID;
+
+##Sum of user 101 transaction cost
+select sum(price*qlt) as "total_price_from_userID=101" 
+from goods 
+join purchaseTransaction 
+on purchaseTransaction.goodsID=goods.GID 
+where userID=101;

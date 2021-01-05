@@ -1,0 +1,7 @@
+select name, 
+	goodsID,
+	qlt 
+from goods right join purchaseTransaction 
+on purchaseTransaction.goodsID=goods.GID 
+group by name;
+
